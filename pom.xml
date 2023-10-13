@@ -35,7 +35,16 @@
             </plugin>
         </plugins>
     </build>
-
+ <distributionManagement>
+    <!-- For releases -->
+   
+    
+    <!-- For snapshots -->
+    <snapshotRepository>
+      <id>rym_test</id>
+      <url>http://100.26.49.220:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
